@@ -15,6 +15,9 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
+  "overrides": {
+  "lightningcss": "$lightningcss"
+},
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.17",
