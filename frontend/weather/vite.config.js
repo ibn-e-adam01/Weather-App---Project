@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss({
+    optimize: false
+  })],
   css: {
     // Force Vite 8 to completely drop lightningcss parsing
     transformer: 'postcss' 
