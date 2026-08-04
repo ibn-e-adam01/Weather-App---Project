@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+    font-family: cursive;
+}
+body,html{
+    background-image: url('https://www.mumbailive.com/images/media/images/monsoon_1618567251997.jpg?bg=7f97a9&crop=748.125%2C420%2Cnull%2C0&fit=crop&fitToScale=h%2C1368%2C768&fm=webp&h=606.3157894736842&height=420&w=1080&width=800');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header{
+    text-align: center;
+    overflow: none;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110vh;
+}
+.header p{
+    font-size: 8vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.curr-con{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.curr{
+    margin-left: 39px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pic-sec{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.pic-sec input{
+    background-color: transparent;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    height: 2vh;
+    width: 33vw;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: larger;
+    outline: none;
+    margin-top: -300px;
+    border: 2px solid whitesmoke;
+    border-radius: 49px;
+}
+
+@media screen and (max-width: 480px) {
+    .pic-sec input{
+        width: 79vw;
+        font-size: medium;
+        padding-bottom: 3vh;
+        padding-right: 1.5vh;
+        padding-left: 1.5vh;
+        letter-spacing: 1.4px;
+        padding-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pic-sec input{
+        width: 79vw;
+        font-size: medium;
+        padding-bottom: 3vh;
+        padding-right: 1.5vh;
+        padding-left: 1.5vh;
+        letter-spacing: 1.4px;
+        padding-top: 3vh;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pic-sec input{
+        width: 59vw;
+        font-size: medium;
+        padding-bottom: 3vh;
+        padding-right: 1.5vh;
+        padding-left: 1.5vh;
+        letter-spacing: 1.4px;
+        padding-top: 3vh;
+    }
+}
+
+.pic-sec input:hover{
+    border: 3px solid whitesmoke;
+    background-color: rgba(213, 213, 213, 0.087);
+}
+.weather-cond i{
+    font-size: 7px;
+}
+.weather-cond{
+    padding-top: -50px;
+    color: white;
+    height: 20ch;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+}
+.border{
+    height: 0.6vh;
+    
+}
+.head{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 11vh;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+
+    height: 7vh;
+    width: auto;
+    padding-left: 29px;
+    padding-right: 29px;
+    color: whitesmoke;
+    border-radius: 29px;
+    border: 2px solid white;
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    button{
+        
+        height: 3vh;
+        padding-top: 2.3vh ;
+        padding-bottom: 2.3vh ;
+        width: auto;
+        letter-spacing: 1.4px;
+    }
+}
+
+
+button:hover{
+    border: 2px solid whitesmoke;
+    background-color: rgba(154, 165, 170, 0.146);
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(1, 78, 111);
+}
+.pp{
+    font-size: larger;
+}
+.remark p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(236, 69, 69);
+}
+.remark2 p{
+    margin-top: 34px;
+    font-size: 17px;
+    color: white;
+}
+.w{
+    font-size: 39px;
+}
+img{
+    size: 0.2px;
+}
+.h{
+    display: flex;
+    color: rgba(240, 248, 255, 0.651);
+    justify-content: center;
+    align-items: center;
+    margin-top: -54px;
+    width: 50vh;
+    letter-spacing: 10px;
+    height: 100%;
+    border-radius: 35px;
+}

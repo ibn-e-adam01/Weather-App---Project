@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body class="h-330">
+    <div class="header">
+        <div class="h"><p class="md:text-md text-2xl">WEATHER</p></div>
+    </div>
+    <div class="curr-con md:h-19 h-0">
+        <div class="curr" id="date"> 
+        </div>
+    </div>
+    <div class="pic-sec">
+        <input type="text" class="placeholder:text-zinc-300 tracking-[0.09rem]" placeholder="Enter Your City Name">
+        <div class="remark"><p>Invalid City Name‼️ Try Again</p></div>
+        <img src="" id="icon">
+        <p class="w"></p>
+        <img src="" alt="">
+        <button class="tracking-[0.03rem]">CHECK WEATHER</button>
+    </div>
+    <div class="weather-cond h-auto flex flex-col md:flex-row gap-9">
+        <div class="para">
+            <div class="pp">
+                <p id="temp">--</p></div><p>Temperature</p></div>
+            <div class="para">
+            <div class="pp">
+                <p id="hum">--</p></div><p>Humidity</p></div>
+            <div class="para">
+            <div class="pp">
+                <p id="pr">--</p></div><p>Pressure</p></div>
+                <div class="para">
+            <div class="pp">
+                <p id="aqi">--</p></div><p>Air Speed</p></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
