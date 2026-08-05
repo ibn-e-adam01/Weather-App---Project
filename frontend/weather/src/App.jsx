@@ -146,7 +146,12 @@ requestAnimationFrame(raf);
     console.log(resWeather.data.sys.country)
     setSunrise(formatSunTime(sunriseTimestampSeconds));
     setSunset(formatSunTime(sunsetTimestampSeconds));
-    setCountry("Country: " + resWeather.data.sys.country)
+    if(!resWeather.data.sys.country){
+      setCountry("Country: " + "Not Known!");
+      return;
+    }
+    setCountry("Country: " + resWeather.data.sys.country);
+    
 
 
       if(!resWeather.data.rain){

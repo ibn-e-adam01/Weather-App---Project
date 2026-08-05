@@ -14,5 +14,8 @@ export default defineConfig({
   build: {
     // Tells Vite 8 to bypass lightningcss and use esbuild instead
     cssMinify: 'esbuild'
+  },
+  server: {
+    allowedHosts: "tubular-playpen-unknown.ngrok-free.dev"
   }
 })
