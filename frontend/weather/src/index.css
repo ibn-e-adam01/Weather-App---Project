@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 
 *{
     padding: 0;
@@ -64,7 +61,8 @@ body,html{
     letter-spacing: 5px;
     font-size: larger;
     outline: none;
-    margin-top: -300px;
+    margin-top: -270px;
+    margin-bottom: 15px;
     border: 2px solid whitesmoke;
     border-radius: 49px;
 }

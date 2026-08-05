@@ -7,15 +7,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss({
     optimize: false
   })],
-  css: {
-    // Force Vite 8 to completely drop lightningcss parsing
-    transformer: 'postcss' 
-  },
   build: {
     // Tells Vite 8 to bypass lightningcss and use esbuild instead
     cssMinify: 'esbuild'
   },
   server: {
-    allowedHosts: "tubular-playpen-unknown.ngrok-free.dev"
+    allowedHosts: ["tubular-playpen-unknown.ngrok-free.dev"]
   }
 })
