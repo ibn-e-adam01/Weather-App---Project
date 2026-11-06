@@ -137,7 +137,7 @@ requestAnimationFrame(raf);
       console.log(resWeather.data.weather[0].icon)
       setAirSpeed(resWeather.data.wind.speed + " m/s" + ` ${Dir}`)
       setGust(resWeather.data.wind.gust + " m/s" + ` ${Dir}`)
-      setPress(resWeather.data.main.pressure + " Pa")
+      setPress(resWeather.data.main.pressure + " hPa")
       setVisibility((resWeather.data.visibility)/1000 + " Km")
       setTemp(((resWeather.data.main.temp) - 273.15).toFixed(1) + " °C")
       setFeelsLike(((resWeather.data.main.feels_like) - 273.15).toFixed(1) + " °C")
@@ -164,6 +164,10 @@ requestAnimationFrame(raf);
         "Content-Type": "application/json"
       }, withCredentials: false}
       );
+
+    // let resAQI = await axios.get(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${Lat}&longitude=${Lon}&hourly=pm10,pm2_5`)
+
+    // console.log(resAQI?.data)
 
 
     console.log(resWeatherForecast?.data.list[0].main.aqi);
@@ -213,7 +217,7 @@ requestAnimationFrame(raf);
 
 
       if(!resWeather.data.rain){
-        setRainInOneHr("Not Expected");
+        setRainInOneHr("0 mm/hr");
         return;
       }
       setRainInOneHr(resWeather?.data?.rain['1h'] + " mm/hr");
