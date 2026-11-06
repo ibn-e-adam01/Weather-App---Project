@@ -33,8 +33,7 @@
     "vite": "^8.2.0"
   },
   "optionalDependencies": {
-    "@lightningcss/linux-x64-gnu": "*",
-    "@lightningcss/linux-x64-musl": "*",
-    "lightningcss-linux-x64-gnu": "^1.33.0"
+    "lightningcss-linux-x64-gnu": "^1.33.0",
+    "lightningcss-linux-x64-musl": "^1.33.0"
   }
 }
